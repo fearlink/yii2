@@ -38,7 +38,7 @@ class TestForm extends Model
     public function myRule($attr)
     {
         if (!in_array($this->$attr, ['hello', 'world'])) {
-            $this->addError($attr, 'wrong!');
+            $this->addError($attr, 'допустимы слова hello или world');
         }
     }
 }
